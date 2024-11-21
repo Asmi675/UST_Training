@@ -1,0 +1,306 @@
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- Logo and Brand Name -->
+    <a class="navbar-brand" href="#">
+      <h3 style="font-family: 'Times New Roman', Times, serif;">QuickAccess</h3>
+    </a>
+
+    <!-- Toggler for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        
+        <!-- Services Dropdown in Navbar -->
+        <li ngbDropdown class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" ngbDropdownToggle aria-expanded="false">
+            Services
+          </a>
+          <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Plumber</a></li>
+            <li><a class="dropdown-item" href="#">Tutor</a></li>
+            <li><a class="dropdown-item" href="#">Electrician</a></li>
+            
+          </ul>
+        </li>
+
+        <li ngbDropdown class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownProfile" ngbDropdownToggle aria-expanded="false">
+            Profile
+          </a>
+          <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownProfile">
+            <li><a class="dropdown-item" href="#">Your Account</a></li>
+            <li><a class="dropdown-item" href="#">Booking Status</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </li>
+        
+        
+
+        <!-- <li class="nav-item">
+          
+          <a class="nav-link" href="#">
+            Profile <i class="fas fa-user-circle"></i>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Include Bootstrap 5 CSS and JS (if not included already) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+<!-- Font Awesome CDN (Only once) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+<!-- Section: Quote & Images -->
+<section class="quote-section py-5">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="quote-text" style="max-width: 50%;">
+      <h2>"Empowering Your Business, One Service at a Time."</h2>
+      <p>We provide reliable and high-quality services to help your business grow. From strategy to execution, we've got
+        you covered.</p>
+    </div>
+    <div class="image-container d-flex flex-wrap justify-content-between" style="max-width: 45%;">
+      <!-- First row of images -->
+      <div class="image-item" style="width: 48%; margin-bottom: 20px;">
+        <img src="electrician img_2.jpg" alt="Electrician Image" class="img-fluid w-100" style="border-radius: 8px;">
+      </div>
+      <div class="image-item" style="width: 48%; margin-bottom: 20px;">
+        <img src="electrician img_1.jpg" alt="Plumber Image" class="img-fluid w-100" style="border-radius: 8px;">
+      </div>
+      <!-- Second row of images -->
+      <div class="image-item" style="width: 48%; margin-bottom: 20px;">
+        <img src="tutor img_2.jpg" alt="Electrician Image" class="img-fluid w-100" style="border-radius: 8px;">
+      </div>
+      <div class="image-item" style="width: 48%; margin-bottom: 20px;">
+        <img src="plumber img_2.jpg" alt="Plumber Image" class="img-fluid w-100" style="border-radius: 8px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section: Background & Top Services Cards -->
+<section class="services-section py-5" style="background: #f8f9fa;">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Top Services</h2>
+    <div class="row">
+      <!-- Card 1: Tutor Service -->
+      <div class="col-md-4">
+        <div class="card d-flex h-100 box">
+          <img src="tutor img_1.jpg" class="card-img-top" alt="Personalized Tutoring">
+          <div class="card-body content">
+            <h5 class="card-title">Ace Academy</h5>
+            <p class="card-text">Get one-on-one tutoring sessions with expert tutors in various subjects. Tailored
+              lessons to fit your learning style and pace.</p>
+            <a href="#" class="btn btn-primary float-end">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Electrical Services -->
+      <div class="col-md-4">
+        <div class="card d-flex h-100 box">
+          <img src="electrician img__3.jpg" class="card-img-top" alt="Electrical Repairs & Installations">
+          <div class="card-body content">
+            <h5 class="card-title">Volt Master</h5>
+            <p class="card-text">Need electrical repairs or installation? Our certified electricians provide reliable
+              and safe electrical services for homes and businesses.</p>
+            <a href="#" class="btn btn-primary float-end">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Plumbing Services -->
+      <div class="col-md-4">
+        <div class="card d-flex h-100 box">
+          <img src="plumber img_1.jpg" class="card-img-top" alt="Plumbing Solutions">
+          <div class="card-body content">
+            <h5 class="card-title">Fixture Fit</h5>
+            <p class="card-text">From leaky faucets to full plumbing installations, our skilled plumbers provide
+              top-notch services to solve your water-related problems.</p>
+            <a href="#" class="btn btn-primary float-end">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="services-section py-5" style="background: #f8f9fa;">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Top Services</h2>
+      <div class="row">
+       
+        <div class="col-md-4">
+            <div class="card d-flex h-100">
+              <img src="tutor img_1.jpg" class="card-img-top" alt="Personalized Tutoring">
+              <div class="card-body">
+                <h5 class="card-title">Ace Academy</h5>
+                <p class="card-text">Get one-on-one tutoring sessions with expert tutors in various subjects. Tailored lessons to fit your learning style and pace.</p>
+                <a href="#" class="btn btn-primary float-end">Book Now</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card d-flex h-100">
+              <img src="electrician img__3.jpg" class="card-img-top" alt="Electrical Repairs & Installations">
+              <div class="card-body">
+                <h5 class="card-title">Volt Master</h5>
+                <p class="card-text">Need electrical repairs or installation? Our certified electricians provide reliable and safe electrical services for homes and businesses.</p>
+                <a href="#" class="btn btn-primary float-end">Book Now</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card d-flex h-100">
+              <img src="plumber img_1.jpg" class="card-img-top" alt="Plumbing Solutions">
+              <div class="card-body">
+                <h5 class="card-title">Fixture Fit</h5>
+                <p class="card-text">From leaky faucets to full plumbing installations, our skilled plumbers provide top-notch services to solve your water-related problems.</p>
+                <a href="#" class="btn btn-primary float-end">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>-->
+
+
+<!-- Section: Quote & Image (Tutoring) -->
+<section class="quote-section py-5">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Hoverable Container (Text + Image) -->
+    <div class="quote-container d-flex align-items-center w-100">
+      <!-- Text Section (Tutoring Description) -->
+      <div class="quote-text" style="max-width: 50%;">
+        <h2>"Unlock Your Potential with Personalized Tutoring."</h2>
+        <p>At Ace Academy, we offer tailored tutoring services designed to meet your unique learning needs. Whether it's
+          mastering a specific subject or preparing for exams, our expert tutors are here to help you achieve your
+          academic goals with confidence.</p>
+        <p>With one-on-one lessons and customized plans, we ensure that you receive the attention and support you need
+          to succeed. Take the first step toward academic excellence today!</p>
+      </div>
+      <!-- Image Section (Tutoring) -->
+      <div class="image-container" style="max-width: 45%;">
+        <img src="tutor img_5.png" alt="Tutoring Image" class="img-fluid w-100" style="border-radius: 8px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- tutor top 5 subcategory -->
+<section class="subjects-section py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Expert Tutors in Top Subjects</h2>
+    <div class="row justify-content-center">
+
+      <!-- Card 1: Maths Tutor -->
+      <div class="col-md-2 col-sm-4 mb-4">
+        <div class="card tutor-card">
+          <img src="maths tutor img.jpg" class="card-img-top" alt="Maths Tutor">
+          <div class="card-body text-center">
+            <h5 class="card-title">Maths Tutor</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Physics Tutor -->
+      <div class="col-md-2 col-sm-4 mb-4">
+        <div class="card tutor-card">
+          <img src="Physics_Tutor img.jpg" class="card-img-top" alt="Physics Tutor">
+          <div class="card-body text-center">
+            <h5 class="card-title">Physics Tutor</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Biology Tutor -->
+      <div class="col-md-2 col-sm-4 mb-4">
+        <div class="card tutor-card">
+          <img src="science tutor img.jpg" class="card-img-top" alt="Biology Tutor">
+          <div class="card-body text-center">
+            <h5 class="card-title">Biology Tutor</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Social Studies Tutor -->
+      <div class="col-md-2 col-sm-4 mb-4">
+        <div class="card tutor-card">
+          <img src="social tutor img.jpg" class="card-img-top" alt="Social Studies Tutor">
+          <div class="card-body text-center">
+            <h5 class="card-title">Social Studies Tutor</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Computer Science Tutor -->
+      <div class="col-md-2 col-sm-4 mb-4">
+        <div class="card tutor-card">
+          <img src="computer science tutor.jpg" class="card-img-top" alt="Computer Science Tutor">
+          <div class="card-body text-center">
+            <h5 class="card-title">Computer Science Tutor</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Font Awesome CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<!-- Footer Section -->
+<footer class="py-3 py-md-4 bg-black text-light">
+  <div class="container text-center">
+    <!-- Copyright -->
+    <div class="mb-3">
+      &copy; 2024 QuickAccess. All Rights Reserved.
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons mb-3">
+      <a href="#!" class="btn btn-outline-light mx-2">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#!" class="btn btn-outline-light mx-2">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#!" class="btn btn-outline-light mx-2">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="#!" class="btn btn-outline-light mx-2">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <!-- Minimal Links (if necessary) -->
+    <div class="small">
+      <a href="#!" class="text-light text-decoration-none mx-2">Privacy Policy</a> |
+      <a href="#!" class="text-light text-decoration-none mx-2">Terms of Service</a>
+    </div>
+  </div>
+</footer>

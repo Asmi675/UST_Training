@@ -1,0 +1,23 @@
+.custom-shadow {
+    box-shadow: 0 4px 8px rgba(158, 96, 240, 0.5); /* Blue shadow with 50% opacity */
+    transition: box-shadow 0.3s; /* Smooth transition effect */
+}
+
+.custom-shadow:hover {
+    box-shadow: 0 8px 16px rgba(255, 0, 221, 0.7); /* Darker blue on hover */
+}
+
+.glow-text {
+    color: #0e0c0c; /* Text color */
+    text-shadow: 0 0 5px rgba(32, 32, 32, 0.8), /* Outer glow */
+                 0 0 10px rgba(250, 246, 187, 0.6),
+                 0 0 15px rgba(0, 123, 255, 0.6); /* Customize this color */
+    transition: text-shadow 0.3s ease; /* Smooth transition */
+}
+
+.glow-text:hover {
+    text-shadow: 0 0 10px rgb(172, 167, 167), /* Brighter glow on hover */
+                 0 0 20px rgb(185, 210, 236), /* Customize this color */
+                 0 0 30px rgba(213, 232, 252, 0.8);
+}
+

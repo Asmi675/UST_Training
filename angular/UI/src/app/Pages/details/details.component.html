@@ -1,0 +1,71 @@
+<div class="container mt-4">
+    <div class="row">
+        <!-- Student ID Form -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">Enter Student ID</div>
+                <div class="card-body">
+                    <form id="studentForm">
+                        <div class="form-group">
+                            <label for="studentId">Student ID:</label>
+                            <input type="text" [(ngModel)]="studentDetail.studentId" class="form-control" id="studentId" name="studentId" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" (click)="onSubmit()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Update Student Details Form -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">Student Details</div>
+                <div class="card-body">
+                    <form id="updateStudentForm" formGroup="updateStudent">
+                        <div class="form-group">
+                            <label for="studentName">Student Name:</label>
+                            <input type="text" [(ngModel)]="studentDetail.studentName" class="form-control" id="studentName" name="studentName" readonly />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentGrade">Student Grade:</label>
+                            <input type="text" [(ngModel)]="studentDetail.studentGrade" class="form-control" id="studentGrade" name="studentGrade" readonly />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentRollNo">Student Roll No:</label>
+                            <input type="text" [(ngModel)]="studentDetail.studentRollNo" class="form-control" id="studentRollNo" name="studentRollNo" readonly />
+                        </div>
+
+                        <!-- <div class="form-group form-check">
+                            <input type="checkbox" [(ngModel)]="studentDetail.isActive" class="form-check-input" id="isActive" name="isActive" readonly/>
+                            <label class="form-check-label" for="isActive">Is Active</label>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="isActive">Is Active:</label>
+                            <p class="form-control-plaintext">
+                                {{ studentDetail.isActive ? 'Yes' : 'No' }}
+                            </p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="createdDate">Created Date:</label>
+                            <input type="text" [(ngModel)]="studentDetail.createdDate" class="form-control" id="createdDate" name="createdDate" readonly />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modifiedDate">Modified Date:</label>
+                            <input type="text" [(ngModel)]="studentDetail.modifiedDate" class="form-control" id="modifiedDate" name="modifiedDate" readonly />
+                        </div>
+
+                        <!-- <div class="row pt-3">
+                            <div class="col text-center">
+                                <button class="btn btn-warning" (click)="onUpdate()" [disabled]="studentDetail.studentId == 0">Update</button>
+                            </div>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

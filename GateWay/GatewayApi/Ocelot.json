@@ -1,0 +1,43 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5003"
+  },
+  "Routes": [
+
+    {
+
+      "UpstreamPathTemplate": "/gateway/article",
+
+      "UpstreamHttpMethod": [
+
+        "Get"
+
+      ],
+
+      "DownstreamPathTemplate": "/api/article",
+
+      "DownstreamScheme": "https",
+
+      "DownstreamHostAndPorts": [
+
+        {
+
+          "Host": "localhost",
+
+          "Port": 5001
+
+        }
+
+      ],
+
+      "FileCacheOptions": {
+
+        "TtlSeconds": 10
+
+      }
+
+    }
+
+  ]
+
+}

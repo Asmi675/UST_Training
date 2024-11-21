@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <!-- Student ID Form -->
+        <div class="col-md-6 mb-4">
+            <div class="card text-center">
+                <div class="card-header bg-secondary text-white">Enter Student ID</div>
+                <div class="card-body">
+                    <form id="studentForm">
+                        <div class="form-group">
+                            <label for="studentId">Student ID:</label>
+                            <input type="text" [(ngModel)]="DeleteDetail.studentId" class="form-control" id="studentId" name="studentId" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" (click)="onDelete()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+/* General body and background styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Modal backdrop (dim the background when modal is open) */
+  .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+  
+  /* Modal content styling */
+  .modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  /* Styling for tutor service cards in the modal */
+  .tutor-card {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .tutor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Tutor Card hover effect */
+  .tutor-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Modal title customization */
+  #tutorModalLabel {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Footer section */
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  footer .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  footer .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  /* Make the image container responsive */
+  .image-container img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+  }
+  

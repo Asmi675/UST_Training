@@ -1,0 +1,30 @@
+
+<form novalidate #loginform="ngForm">
+   <div> 
+  <label>Name: <input type="text" required name="name" [(ngModel)]="login.Name"></label>
+    </div>
+    <div>
+    <label>Password: <input type="password" required name="pass" [(ngModel)]="login.Password"></label>
+    </div>
+    <div>
+  Gender:
+  <label> <input type="radio" required name="gender" value="f" [(ngModel)]="login.Gender"> : Female </label>
+    
+  <label> <input type="radio" required name="gender" value="m" [(ngModel)]="  login.Gender"> : Male</label>
+    </div>
+    <div>
+  <label>City: <select required name="city" [(ngModel)]="login.city">
+    <option disabled selected value="">--Choose City--</option>
+    <option>New Delhi</option>
+    <option>Chennai</option>
+    <option>Mumbai</option>
+    <option>Kolkata</option>
+      </select>]
+    </label>
+    </div>
+    <div>
+    </div>
+    <label><input type="checkbox" required name="terms" [(ngModel)]="login.Terms"> : Terms</label>
+    
+    <button>Send</button>
+</form>

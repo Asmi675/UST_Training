@@ -1,0 +1,29 @@
+<div class="container mt-5">
+        <div class="row" >
+            @for (item of students; track $index)
+            {
+                <div class="col-md-4 mb-4"> <!--to generate space between boxes-->
+                <div class="card border-primary" style ="width :23rem  ">
+                    <!-- <div class="card col-mb-4 border-light "> -->
+                            <div class="col-mb-3 ">
+                                <img [src]="item.photoPath" class="card-img-top " alt="image">
+                            </div>
+                            <div class="mb-3">
+                                <p class="card-text">
+                                    ID : {{item.id}}<br>
+                                    Name : {{item.name}}<br>
+                                    Gender :{{item.gender}}<br>
+                                    Email :{{item.email}}<br>
+                                    Phone Number :{{item.phoneNumber}}<br>
+                                    dateOfBirth :{{item.dateOfBirth}}<br>
+                                    Department :{{item.department}}<br>
+                                    isActive :{{item.isActive}}<br>
+                                </p>
+                            </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+    

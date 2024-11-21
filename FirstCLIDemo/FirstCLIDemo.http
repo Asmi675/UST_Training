@@ -1,0 +1,6 @@
+@FirstCLIDemo_HostAddress = http://localhost:5072
+
+GET {{FirstCLIDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

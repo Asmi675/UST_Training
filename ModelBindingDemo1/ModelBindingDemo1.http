@@ -1,0 +1,6 @@
+@ModelBindingDemo1_HostAddress = http://localhost:5195
+
+GET {{ModelBindingDemo1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

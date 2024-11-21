@@ -1,0 +1,42 @@
+<div class="glow-text">
+<h2 class="display-5 text-center" style="font-family: 'Times New Roman', Times, serif;">Student List</h2>
+</div>
+<div class="container  mt-4">
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <table class="table table-bordered text-center table-striped custom-shadow">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <!-- <th>Grade</th> -->
+                        <th>RollNo</th>
+                        <!-- <th>Active</th>
+                        <th>CreatedDate</th>
+                        <th>ModifiedDate</th> -->
+                        <!-- <th></th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (item of StudentList; track $index) 
+                    {
+                        <tr>
+                            <td>{{item.studentId}}</td>
+                            <td>{{item.studentName}}</td>
+                            <!-- <td>{{item.studentGrade}}</td> -->
+                            <td>{{item.studentRollNo}}</td>
+                            <!-- <td>{{item.isActive}}</td>
+                            <td>{{item.createdDate}}</td>
+                            <td>{{item.modifiedDate}}</td> -->
+                            <!-- <td><a class="btn btn-primary" [routerLink]="['/Details' , item.studentId]">Details</a> |
+                            <a class="btn btn-primary" [routerLink]="['/Upd' , item.studentId]">Update</a> |
+                            <a class="btn btn-primary" [routerLink]="['/Delete' , item.studentId]">Delete</a></td> -->
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<router-outlet />

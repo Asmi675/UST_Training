@@ -1,0 +1,35 @@
+#introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+  
+      .carousel-item:nth-child(1) {
+        background-image: url('D:/.net/angular/StudentLog/public/univ2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+  
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 50vh;
+        }
+      }
+  
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+
+      .mb-3{
+        font-family: 'Times New Roman', Times, serif;
+        
+      }

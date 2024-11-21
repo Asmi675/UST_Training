@@ -1,0 +1,118 @@
+html {
+  height: 100%;
+  display: flex; /* Using flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0;
+  background-color: white;
+}
+.container {
+  background-color: #212121; /* Background color of the container */
+  padding: 20px; /* Padding around the cards */
+  display: flex;
+  justify-content: center; /* Center the cards inside the container */
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7); /* Optional shadow */
+  width: 80%; /* Set the width of the container */
+  max-width: 1000px; /* Maximum width of the container */
+  overflow: hidden; /* Ensure nothing overflows */
+}
+.custom-card {
+  display: flex;
+  flex-wrap: wrap;                  /* Allow cards to wrap into rows */
+  gap: 20px;                        /* Space between cards */
+  justify-content: space-between;   /* Distribute cards evenly with space between them */
+  padding: 20px;
+}
+
+.card {
+  width: 190px;                     /* Fixed width for the card */
+  height: 204px;                    /* Fixed height for the card */
+  position: relative;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  /* Remove flex-grow and flex-shrink to keep size fixed */
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;                     /* Fixed width of the gradient */
+  height: 214px;                    /* Fixed height of the gradient */
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #CCA483 0%, #FAEAD0 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #7E4F3B 0%, #FAEAD0 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+.card p:last-child {
+  color: #7E4F3B;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.1) scaleY(0.94);
+}
+
+/* Font styling for the custom text */
+.custom-text {
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  background: linear-gradient(to right, #7E4F3B, #ffffff, #7E4F3B);
+  animation: textanimeation 5s infinite linear;
+  background-size: 200%;
+}
+
+@keyframes textanimeation {
+  to {
+    background-position: 200%;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    justify-content: space-around; /* Adjust alignment on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-card {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center;
+  }
+}

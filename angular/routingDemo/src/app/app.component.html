@@ -1,0 +1,27 @@
+<h2> Routing in Angular</h2>
+<nav>
+  <ul>
+    <li>
+      <a 
+      routerLink ="/first-component"
+      routerLinkActive = "active"
+      ariaCurrentWhenActive="page">
+      first Component</a>
+    </li>
+    <li>
+      <a 
+      routerLink ="/second-component"
+      routerLinkActive = "active"
+      ariaCurrentWhenActive="page">
+      second Component</a>
+    </li>
+    <li>
+      <a 
+      routerLink ="/pagenotfound-component"
+      routerLinkActive = "active"
+      ariaCurrentWhenActive="page">
+      Page Not Found Component</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet />
